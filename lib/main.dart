@@ -25,7 +25,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     Scaffold homePage = Scaffold(
       body: FutureBuilder<WeatherCondition>(
-        future: fetchWeatherCondition('Itapema', 'BR'),
+        future: fetchWeatherCondition('Miami', 'US'),
         builder: (context, response) {
           if (response.hasError) {
             return Text("${response.error}");
